@@ -20,7 +20,7 @@ PASSWORD = 'e8P5!DQ@b7uZ'
 
 
 class IntuitSpider:
-    CHROME_DRIVER_PATH = os.path.dirname(__file__) + '/chromedriver'
+    CHROME_DRIVER_PATH = os.path.dirname(os.path.abspath(__file__)) + '/chromedriver'
     HOME_URL = 'https://ito.intuit.com/app/protax/sign-in'
     CSV_HEADER = ['CLIENT NAME', 'RETURN NAME', 'TYPE', 'DATA REQUESTS', 'STATUS', 'ESIGNATURE STATUS', 'EFILE STATUS', 'ACTION']
 
